@@ -1,12 +1,35 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-</div>
-<ul>
-  <li>
-    <h2>Item: {{ currentMcrItem.Name }}</h2>
-  </li>
-</ul>
 
+<div id="mainHeader">
+  <div id="mainHeaderProductName">Air Panel Demo</div>
+</div>
+
+<div class="engineList">    
+  <div class="groupBoxLabel">CURRENT ITEM</div>
+  <div class="groupBox">
+    <h2 class="groupBoxLabel">Item: {{ currentMcrItem.Name }}</h2>
+    
+  </div>
+</div>
+
+
+<div class="engineList">    
+  <div class="groupBoxLabel">CONTROLS</div>
+  <div class="groupBox">
+      <table>
+          <tr>
+              <td>
+                  <div class="buttonCaption">PLAY</div>
+                  <div type="button" class="btn btn-goLive"  >
+                      <div class="square" style="background: black"></div>
+                  </div>
+              </td>
+              <td>
+                  <div class="buttonCaption buttonCaption-clearAll">CLR</div>
+                  <div type="button" class="btn btn-select">
+                      <div class="square" style="background: black"></div>
+                  </div>
+              </td>
+          </tr>
+      </table>
+  </div>
+</div>
