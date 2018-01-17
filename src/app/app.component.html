@@ -5,9 +5,8 @@
 
 <div class="engineList">    
   <div class="groupBoxLabel">CURRENT ITEM</div>
-  <div class="groupBox">
+  <div class="groupBox" ng-app="">
     <h2 class="groupBoxLabel">Item: {{ currentMcrItem.Name }}</h2>
-    
   </div>
 </div>
 
@@ -19,7 +18,7 @@
           <tr>
               <td>
                   <div class="buttonCaption">PLAY</div>
-                  <div type="button" class="btn btn-goLive"  >
+                  <div type="button" class="btn btn-goLive" (click)="playItem(currentMcrItem)" >
                       <div class="square" style="background: black"></div>
                   </div>
               </td>

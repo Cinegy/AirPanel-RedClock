@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { McrItem } from './models/mcritem';
-//import { HttpClient } from '@angular/common/http';
-
 
 @Component({
   selector: 'app-root',
@@ -14,15 +12,17 @@ export class AppComponent {
 
   public currentMcrItem: McrItem;
 
-  constructor(){ //httpClient: HttpClient) {
+  constructor() {
     this.currentMcrItem = new McrItem();
     
-    this.currentMcrItem.Name = "Mike Is A Wibbler";
-    this.currentMcrItem.Comment = "Oh, yes - he really is";
+    this.currentMcrItem.Name = "Item Default Name";
+    this.currentMcrItem.Comment = "Item Default Comment";
 
-    //httpClient.get('./assets/config/mcritem-dummy1.json')
-    //  .subscribe(
-    //    response => { this.currentMcrItem = response as McrItem; }
-    //  )
+  }
+  
+  public playItem(item:McrItem) : boolean
+  {
+    item.Name = `Clicked at ${new Date().getTime()}`;
+    return false;
   }
 }
