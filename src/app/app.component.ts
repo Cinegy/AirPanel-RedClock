@@ -18,9 +18,9 @@ export class AppComponent {
 
   private updateTime() {
     var d = new Date();
-    var hour = d.getHours();
-    var mins = d.getMinutes();
-    var secs = d.getSeconds();
+    var hour = this.pad2(d.getHours());
+    var mins = this.pad2(d.getMinutes());
+    var secs = this.pad2(d.getSeconds());
     var frames = this.pad2(Math.round(d.getMilliseconds() / 40));
     
     this.CurrentTime = `${hour}:${mins}:${secs}:${frames}`;
