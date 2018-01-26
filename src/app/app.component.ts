@@ -21,10 +21,17 @@ export class AppComponent {
     var hour = d.getHours();
     var mins = d.getMinutes();
     var secs = d.getSeconds();
-    var frames = Math.round(d.getMilliseconds() / 40).toString().padStart(2,'0');
+    var frames = this.pad2(Math.round(d.getMilliseconds() / 40));
     
     this.CurrentTime = `${hour}:${mins}:${secs}:${frames}`;
     this.timer = setTimeout(() => this.updateTime(), 40);
+  }
+
+  private pad2(num: number) : string
+  {
+      var s = "0" + num;
+      if(s.length==2) return s;
+      return s.substr(1,2);
   }
 
 }
