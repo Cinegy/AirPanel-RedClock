@@ -17,14 +17,14 @@
       <table>
           <tr>
               <td>
-                  <div class="buttonCaption">PLAY</div>
+                  <div class="buttonCaption">PLY</div>
                   <div type="button" class="btn btn-goLive" (click)="playItem(currentMcrItem)" >
                       <div class="square" style="background: black"></div>
                   </div>
               </td>
               <td>
                   <div class="buttonCaption buttonCaption-clearAll">CLR</div>
-                  <div type="button" class="btn btn-select">
+                  <div type="button" class="btn btn-select" (click)="clearItem(currentMcrItem)">
                       <div class="square" style="background: black"></div>
                   </div>
               </td>
