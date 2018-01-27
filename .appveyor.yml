@@ -14,9 +14,9 @@ install:
 test_script:
   - node --version
   - npm --version
-  - node tests\run_e2e.js --appveyor "--glob=tests/{basic,commands,generate,build/styles}/**"
 
-build: off
+build:
+  - npm build
 
 cache:
   - node_modules -> package-lock.json
