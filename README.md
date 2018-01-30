@@ -1,6 +1,16 @@
 # AirPanelDemo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
+##Download the Plugin
+
+The latest plugin compiled is available to grab from our build server here:
+
+https://ci.appveyor.com/project/cinegy/airpanel-redclock
+
+We recommend that you get your plugins from our customer or partner portal, which will be set up once Cinegy Air 12 is released.
+
+## How do we make these plugins?
+
+We bootstrap the plugin using Angular, and this project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
 
 ## Development server
 
