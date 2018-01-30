@@ -1,6 +1,6 @@
 environment:
   matrix:
-    - nodejs_version: "6"
+    - nodejs_version: "8"
 
 matrix:
   fast_finish: true
@@ -16,7 +16,13 @@ test_script:
   - npm --version
 
 build_script:
-  - npm build
+  - npm run-script build
 
 cache:
   - node_modules -> package-lock.json
+
+after_build:
+- cmd: >-
+    7z a AirPlugin-RedClock-%APPVEYOR_REPO_BRANCH%-%APPVEYOR_BUILD_VERSION%.zip %APPVEYOR_BUILD_FOLDER%\dist\*.*
+
+    appveyor PushArtifact AirPlugin-RedClock-%APPVEYOR_REPO_BRANCH%-%APPVEYOR_BUILD_VERSION%.zip
