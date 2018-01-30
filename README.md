@@ -1,10 +1,12 @@
 # AirPanelDemo
 
-##Download the Plugin
+## Download the Plugin
 
-The latest plugin compiled is available to grab from our build server here:
+The latest plugin compiled is available to grab from our build server artifacts here:
 
-https://ci.appveyor.com/project/cinegy/airpanel-redclock
+[AppVeyor Project](https://ci.appveyor.com/project/cinegy/airpanel-redclock)
+
+Here is the status of the MASTER branch: [![Build status](https://ci.appveyor.com/api/projects/status/ptu5f8gvyph19f9w/branch/master?svg=true)](https://ci.appveyor.com/project/cinegy/airpanel-redclock/branch/master)
 
 We recommend that you get your plugins from our customer or partner portal, which will be set up once Cinegy Air 12 is released.
 
